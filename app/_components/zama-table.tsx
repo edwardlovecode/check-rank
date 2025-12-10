@@ -54,20 +54,20 @@ export default function ZamaTable() {
       <div className="w-full flex items-center mb-8">
         <Button
           variant="outline"
-          className={`${option} === "day" ? "bg-amber-500 : ""`}
+        className={ option === "day" ? "bg-amber-500" : "" }
           onClick={() => setOptions("day")}
         >
           24h
         </Button>
         <Button
-        className={`${option} === "week" ? "bg-amber-500 : ""`}
+        className={ option === "week" ? "bg-amber-500" : "" }
           variant="outline"
           onClick={() => setOptions("week")}
         >
           7d
         </Button>
         <Button
-         className={`${option} === "month" ? "bg-amber-500 : ""`}
+          className={ option === "month" ? "bg-amber-500" : "" }
           variant="outline"
           onClick={() => setOptions("month")}
         >
