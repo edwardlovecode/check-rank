@@ -30,7 +30,7 @@ export default function ZamaTable() {
       const results = [];
 
       for (let p = 1; p <= totalPages; p++) {
-        const url = `https://leaderboard-bice-mu.vercel.app/api/zama?timeframe=month&sortBy=mindshare&page=${p}`;
+        const url = `https://leaderboard-bice-mu.vercel.app/api/zama?timeframe=${option}&sortBy=mindshare&page=${p}`;
         const res = await fetch(url);
         if (!res.ok) throw new Error("Failed to fetch page " + p);
         const json = await res.json();
